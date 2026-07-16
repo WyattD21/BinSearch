@@ -16,7 +16,7 @@ int recursiveBinarySearch(const vector<int>& vec, int target, int left, int righ
 
 // Iterative Binary Search
 int iterativeBinarySearch(const vector<int>& vec, int target) {
-    int left = 0, right = vec.size() - 1;
+    int left = 0, right = static_cast<int>(vec.size()) - 1;
     while (left <= right) {
         int mid = left + (right - left) / 2;
         if (vec[mid] == target) return mid;
@@ -41,10 +41,10 @@ int main() {
     int target2 = 100; // 
 
     // Recursive Binary Search
-    int index = recursiveBinarySearch(vec, target1, 0, vec.size() - 1);
+    int index = recursiveBinarySearch(vec, target1, 0, static_cast<int>(vec.size()) - 1);
     cout << target1 << (index != -1 ? " found at location " : " was not found, return value is ") << index << endl;
 
-    index = recursiveBinarySearch(vec, target2, 0, vec.size() - 1);
+    index = recursiveBinarySearch(vec, target2, 0, static_cast<int>(vec.size()) - 1);
     cout << target2 << (index != -1 ? " found at location " : " was not found, return value is ") << index << endl;
 
     // Iterative Binary Search
