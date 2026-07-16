@@ -1,5 +1,9 @@
-# Binary Search Lab
+# Search Algorithm Comparison
 
-Compare recursive, iterative, and sequential search in C++, then use the browser demo to watch binary search discard half of its remaining data at every step.
+This project compares three search methods:
 
-Open `index.html`, edit the sorted data and target, and choose **Run search**. The C++ example builds with the included CMake project.
+- recursive binary search
+- iterative binary search
+- sequential search
+
+The C++ program prints the result from each method. `index.html` includes a step-by-step binary search display where the numbers and target can be changed.
